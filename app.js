@@ -59,5 +59,6 @@ const knex = require('knex')({
   client: 'mysql',
   connection: settings.database
 });
-app.locals.knex = knex;
-app.listen(settings.APIServerPort , () => console.info(`API Server is running on ${settings.APIServerPort}`));
+app.locals.knex = knex; 
+
+app.listen(process.env.PORT || settings.APIServerPort , () => console.info(`API Server is running on ${settings.APIServerPort}`));

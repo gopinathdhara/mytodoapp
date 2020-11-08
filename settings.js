@@ -1,4 +1,4 @@
-const APIServerPort = process.env.port || 3000;
+const APIServerPort = 3000;
 const APIUrl = 'http://localhost:4200'; 
 const database = {
   host: 'localhost',
